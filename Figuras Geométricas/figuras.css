@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+header {
+    background-color: #081b31;
+    color: #cfc;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+#figures {
+    display: flex;
+
+}
+#square-cont {
+    max-width: 45%;
+    margin: 20px;
+    padding: 16px;
+    border: 1px solid #000;
+}
