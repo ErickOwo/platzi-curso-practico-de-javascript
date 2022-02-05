@@ -1,3 +1,8 @@
+:root {
+    --blue-hard: #081b31;
+    --blue-soft: #09294e;
+    --white: #cfc;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +13,8 @@ body {
     color: #333;
 }
 header {
-    background-color: #081b31;
-    color: #cfc;
+    background-color: var(--blue-hard);
+    color: var(--white);
     padding: 20px;
 }
 h1 {
@@ -17,11 +22,73 @@ h1 {
 }
 #figures {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#square-cont {
-    max-width: 45%;
+#figures form {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
     margin: 20px;
     padding: 16px;
     border: 1px solid #000;
+    height: 260px;
+}
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.data label {
+    min-width: min-content;
+    max-width: max-content;
+}
+.data input {
+    max-width: 150px;
+}
+.buttons {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.buttons button {
+    padding: 4px;
+    margin: 12px 0px;
+    border: none;
+    background-color: var(--blue-hard);
+    color: #fff;
+    border-radius: 4px;
+    transition: .08s ease background;
+}
+.buttons button:hover {
+    background-color: var(--blue-soft);
+}
+.buttons button:active {
+    background-color: #3a6699;
+}
+.results {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+.results input {
+    outline: none;
+    border: none;
+    margin-bottom: 8px;
+    width: min-content;
+    justify-self: center;
+}
+#triangle-cont .data {
+    display: block;
+}
+.sides-triangle {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin-top: 10px;
+}
+.sides-triangle label {
+    margin-right: 10px;
+}
+.sides-triangle input {
+    margin-bottom: 5px;
 }

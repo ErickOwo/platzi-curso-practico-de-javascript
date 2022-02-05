@@ -11,14 +11,63 @@
     <header>
         <h1>Figuras Geométricas</h1>
     </header>
-    <section id="Figures">
+    <section id="figures">
         <form id="square-cont">
             <h2>Cuadrado.</h2>
-            <label for="square">Ingrese lado del cuadrad</label>
-            <input type="number" id="square-value">
-            <button type="button" id="perimetroCuadrado">Calcular Perimetro</button>
-            <button type="button" id="areaCuadrado">Calcular Area</button>
+            <div class="data">
+                <label for="square-value">Ingrese medida de un lado del cuadrado:</label>
+                <input type="number" id="square-value">
+            </div>
+            <div class="buttons">
+                <button type="button" id="dataSquare">Calcular Resultados</button>
+            </div>
+            <div class="results">
+                <label for="perimeterSquare">Perimetro del cuadrado:</label>
+                <input type="number" id="perimeter-square" readonly>
+                <label for="">Area del cuadrado:</label>
+                <input type="number" id="area-square" readonly>
+            </div>
+        </form>
+        <form id="triangle-cont">
+            <h2>Triangulo.</h2>
+            <div class="data">
+                <label for="triangle-value">Ingrese medidas de los lados del triangulo:</label>
+                <div class="sides-triangle">
+                    <label for="side1">Lado 1:</label>
+                    <input type="number" id="side1">
+                    <label for="side2">Lado 2:</label>
+                    <input type="number" id="side2">
+                    <label for="side3">Base:</label>
+                    <input type="number" id="side3">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="dataTriangle">Calcular Resultados</button>
+            </div>
+            <div class="results">
+                <label for="perimeterTriangle">Perimetro del triangulo:</label>
+                <input type="text" id="perimeter-triangle" readonly>
+                <label for="">Area del triangulo:</label>
+                <input type="text" id="area-triangle" readonly>
+            </div>
+        </form>
+        <form id="circle-cont">
+            <h2>Circulo.</h2>
+            <div class="data">
+                <label for="circle-value">Ingrese radio del circulo:</label>
+                <input type="number" id="circle-value">
+            </div>
+            <div class="buttons">
+                <button type="button" id="dataCircle">Calcular Resultados</button>
+            </div>
+            <div class="results">
+                <label for="perimeterCircle">Perimetro del circulo:</label>
+                <input type="number" id="perimeter-circle" readonly>
+                <label for="">Area del circulo:</label>
+                <input type="number" id="area-circle" readonly>
+            </div>
         </form>
     </section>
+    <script src="./figuras.js"></script>
 </body>
 </html>
