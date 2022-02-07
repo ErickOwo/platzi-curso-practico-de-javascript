@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: 333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+header {
+    border-bottom: 1px solid #555;
+    height: 80px;
+    color: #333;
+    padding: 10px;
+}
+.form-container {
+    background-color: #e1e1e1;
+    width: 400px;
+    padding: 24px;
+    margin: 20px auto;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 15px;
+}
+input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+
+}
+input::placeholder{
+    color: #555;
+}
+input:hover {
+    background-color: #ccc;
+}
+input:focus {
+    background-color: #bdbadf;
+    color: #222;
+}
+#price-product {
+    margin: 10px auto 25px;
+    width: 220px;
+    height: 22px;
+}
+#coupon-code {
+    width: 250;
+    height: 26px;
+}
+#verify {
+    margin: 20px auto 16px;
+    width: 85px;
+    padding: 4px 0;
+    background-color: #350fb4;
+    border: 1px solid #fff;
+    color: #fff;
+}
+#verify:hover {
+    background-color: #421dbd;
+}
+#verify:active {
+    background-color: #3710b4;
+}
+.results {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    height: 200px;
+    display: flex;
+    background-color: #37076e;
+    color: #fff;
+    border-radius: 25px 0 25px;
+    animation: appear .9s forwards ease-out;
+}
+.content-results {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-results p {
+    margin-bottom: 14px;
+    animation: entrance 1s forwards linear;
+}
+.content-results span {
+    color: rgb(228, 209, 45);
+    font-weight: bold;
+    font-size: 20px;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes entrance {
+    0%{
+        transform: translate(0, 10px) scale(.9);
+    }
+    100% {
+        transform: translate(0, 0) scale(1.1);
+    }
+}
+
